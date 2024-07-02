@@ -1,12 +1,12 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import Product from './product/Product'
+import Pro from './Pro'
 
 
 const App = () => {
   return (
     <Box>
-      <Product />
+      <Pro />
     </Box>
   )
 }
