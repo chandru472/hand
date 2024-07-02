@@ -3,9 +3,15 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import { Typography } from '@mui/material';
+import { Divider, Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 
 import b1 from '../src/product/b1.jpg';
 import b2 from '../src/product/b2.jpg';
@@ -158,7 +164,7 @@ export default function Pro() {
                     </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Letter Keychains Started at &#8377; 200</Typography>
+                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Letter Keychains Started at &#8377; 150</Typography>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center' }}>
                         <Box component='img' src={l1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
@@ -188,8 +194,8 @@ export default function Pro() {
                     </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={3}>
-                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Photo Keychains Started at &#8377; 200</Typography>
-                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center',  }}>
+                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Photo Keychains Started at &#8377; 150</Typography>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', }}>
                         <Box component='img' src={p1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
                             transition: 'transform 0.3s ease-in-out',
@@ -219,6 +225,38 @@ export default function Pro() {
 
                     </Box>
                 </CustomTabPanel>
+                <Box sx={{ mt: 2 }}>
+                    <Typography textAlign={'center'} sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Featured Products</Typography>
+                    <Divider sx={{ backgroundColor: 'white', mt: 2 }} />
+
+                    <Box>
+                        <Swiper
+
+                            slidesPerView={'auto'}
+                            spaceBetween={30}
+                            centeredSlides={true}
+                            pagination={{ clickable: true }}
+                            navigation={true}
+                            modules={[Pagination, Navigation]}
+                            className="mySwiper1"
+                        >
+                            <SwiperSlide style={{ display: 'flex', justifyContent: 'center', width: '100%',px:2 }}>
+                                <Box component='img' src={l1} alt='bangle'  sx={{  mt: 4,mx:2,width:{xs:'180px',sm:'320px',md:'320px'} }} />
+                                <Box component='img' src={l2} alt='bangle' sx={{  mt: 4,mx:2,width:{xs:'180px',sm:'320px',md:'320px'} }} />
+                            </SwiperSlide>
+                        
+                            <SwiperSlide style={{ display: 'flex', justifyContent: 'center', width: '100%',px:2 }}>
+                                <Box component='img' src={l3} alt='bangle' sx={{  mt: 4,mx:2,width:{xs:'180px',sm:'320px',md:'320px'} }} />
+                                <Box component='img' src={l4} alt='bangle' sx={{  mt: 4,mx:2 ,width:{xs:'180px',sm:'320px',md:'320px'}}} />
+                            </SwiperSlide>
+                           
+                            
+
+                        </Swiper>
+                    </Box>
+                </Box>
+
+
             </Box>
         </ThemeProvider>
     );
