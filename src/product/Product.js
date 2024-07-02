@@ -412,12 +412,7 @@ const Product = () => {
                                     transform: 'translateY(-10px)',
                                 },
                             }} />
-                            <Box component='img' src={p5} alt='bangle' width={300} height={300} sx={{
-                                borderRadius: '8px', mt: 4, transition: 'transform 0.3s ease-in-out',
-                                '&:hover': {
-                                    transform: 'translateY(-10px)',
-                                },
-                            }} />
+                            
                           
                         </Box>
                     </Box>
