@@ -5,6 +5,22 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+
+import b1 from '../src/product/b1.jpg';
+import b2 from '../src/product/b2.jpg';
+import b3 from '../src/product/b3.jpg';
+import b4 from '../src/product/b4.jpg';
+
+import j1 from '../src/product/j1.jpg';
+import j2 from '../src/product/j2.jpg';
+import j3 from '../src/product/j3.jpg';
+
+
+import l1 from '../src/product/l1.jpg';
+import l2 from '../src/product/l2.jpg';
+import l3 from '../src/product/l3.jpg';
+import l4 from '../src/product/l4.jpg';
+
 import p1 from '../src/product/p11.jpg';
 import p2 from '../src/product/p2.jpg';
 import p3 from '../src/product/p3.jpg';
@@ -61,11 +77,11 @@ export default function Pro() {
     return (
         <ThemeProvider theme={theme}>
             <Box sx={{ width: '100%' }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                <Box sx={{ borderBottom: 0.5, borderColor: 'white', mt: 2 }}>
                     <Tabs
                         textColor="primary"
                         indicatorColor="secondary"
-                        
+
                         centered
                         value={value}
                         onChange={handleChange}
@@ -74,26 +90,101 @@ export default function Pro() {
                             '& .MuiTab-root': {
                                 textTransform: 'capitalize',
                                 fontSize: { xs: '10px', sm: '14px', md: '16px' },
-                            },
+                            }, mb: 2
                         }}
                     >
-                        <Tab label="Bangles" {...a11yProps(0)} disableTouchRipple sx={{color:'white'}}/>
-                        <Tab label="Jhumukas" {...a11yProps(1)} disableTouchRipple sx={{color:'white'}}/>
-                        <Tab label="Letter Keychain" {...a11yProps(2)} disableTouchRipple sx={{color:'white'}}/>
-                        <Tab label="Photo Keychain" {...a11yProps(3)} disableTouchRipple sx={{color:'white'}}/>
+                        <Tab label="Bangles" {...a11yProps(0)} disableTouchRipple sx={{ color: 'white' }} />
+                        <Tab label="Jhumukas" {...a11yProps(1)} disableTouchRipple sx={{ color: 'white' }} />
+                        <Tab label="Letter Keychain" {...a11yProps(2)} disableTouchRipple sx={{ color: 'white' }} />
+                        <Tab label="Photo Keychain" {...a11yProps(3)} disableTouchRipple sx={{ color: 'white' }} />
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', }}>
+                        <Box component='img' src={b1} alt='bangle' width={320} height={350} sx={{
+                            mt: 4,
+                            transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={b2} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={b3} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={b4} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                    </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                    Item Two
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center' }}>
+                        <Box component='img' src={j1} alt='bangle' width={320} height={350} sx={{
+                            mt: 4,
+                            transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={j2} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={j3} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+
+
+
+                    </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                    Item Three
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center' }}>
+                        <Box component='img' src={l1} alt='bangle' width={320} height={350} sx={{
+                            mt: 4,
+                            transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={l2} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={l3} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                        <Box component='img' src={l4} alt='bangle' width={320} height={350} sx={{
+                            mt: 4, transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'translateY(-10px)',
+                            },
+                        }} />
+                    </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={3}>
-                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', mt: -4 }}>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', mt: -2 }}>
                         <Box component='img' src={p1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
                             transition: 'transform 0.3s ease-in-out',
