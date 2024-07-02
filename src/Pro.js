@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import { Typography } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
@@ -90,7 +91,7 @@ export default function Pro() {
                             '& .MuiTab-root': {
                                 textTransform: 'capitalize',
                                 fontSize: { xs: '10px', sm: '14px', md: '16px' },
-                            }, mb: 2
+                            }, mb: 4
                         }}
                     >
                         <Tab label="Bangles" {...a11yProps(0)} disableTouchRipple sx={{ color: 'white' }} />
@@ -100,6 +101,7 @@ export default function Pro() {
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
+                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Bangles Started at &#8377; 800</Typography>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', }}>
                         <Box component='img' src={b1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
@@ -129,6 +131,7 @@ export default function Pro() {
                     </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
+                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Jhumukas Started at &#8377; 100</Typography>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center' }}>
                         <Box component='img' src={j1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
@@ -155,6 +158,7 @@ export default function Pro() {
                     </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
+                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Letter Keychains Started at &#8377; 200</Typography>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center' }}>
                         <Box component='img' src={l1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
@@ -184,7 +188,8 @@ export default function Pro() {
                     </Box>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={3}>
-                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', mt: -2 }}>
+                    <Typography textAlign='center' sx={{ fontSize: { xs: '1rem', sm: '1.2rem', md: '1.5rem' }, mt: 1, color: '#C0C0C0', fontWeight: 600, }}>Photo Keychains Started at &#8377; 200</Typography>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center',  }}>
                         <Box component='img' src={p1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
                             transition: 'transform 0.3s ease-in-out',
