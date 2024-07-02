@@ -94,26 +94,26 @@ export default function Pro() {
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={3}>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', mt: -4 }}>
-                        <Box component='img' src={p1} alt='bangle' width={320} height={390} sx={{
+                        <Box component='img' src={p1} alt='bangle' width={320} height={350} sx={{
                             mt: 4,
                             transition: 'transform 0.3s ease-in-out',
                             '&:hover': {
                                 transform: 'translateY(-10px)',
                             },
                         }} />
-                        <Box component='img' src={p2} alt='bangle' width={320} height={390} sx={{
+                        <Box component='img' src={p2} alt='bangle' width={320} height={350} sx={{
                             mt: 4, transition: 'transform 0.3s ease-in-out',
                             '&:hover': {
                                 transform: 'translateY(-10px)',
                             },
                         }} />
-                        <Box component='img' src={p3} alt='bangle' width={320} height={390} sx={{
+                        <Box component='img' src={p3} alt='bangle' width={320} height={350} sx={{
                             mt: 4, transition: 'transform 0.3s ease-in-out',
                             '&:hover': {
                                 transform: 'translateY(-10px)',
                             },
                         }} />
-                        <Box component='img' src={p4} alt='bangle' width={320} height={390} sx={{
+                        <Box component='img' src={p4} alt='bangle' width={320} height={350} sx={{
                             mt: 4, transition: 'transform 0.3s ease-in-out',
                             '&:hover': {
                                 transform: 'translateY(-10px)',
